@@ -6,6 +6,11 @@
 输入:1->2->3->4->5->NULL
 
 输出:5->4->3->2->1->NULL
+
+#None <- 1
+        #1 <-2
+        #1 <-2 <- 3
+        #1 <-2 <- 3 <-4 <- 5
 '''
 
 # Definition for singly-linked list.
