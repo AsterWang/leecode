@@ -1,5 +1,5 @@
 class Solution:
-    def solveNQueens(self, n: int) -> List[List[str]]:
+    def solveNQueens(self, n):
         result = []
         nums = [-1] * n
         self.dfs(nums, [], 0, result)
