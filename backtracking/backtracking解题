@@ -1,0 +1,5 @@
+backtracking的三种问题
+
+ 1. Find a path to success  返回值是 true/ false,就是有没有解的问题
+ 2. Find all paths to success 求个数，设全局Counter,返回值是void；求所有解的信息，设result，返回值void
+ 3. Find the best path to success  设全局变量best，返回值是void

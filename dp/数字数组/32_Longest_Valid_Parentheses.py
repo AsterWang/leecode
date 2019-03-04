@@ -25,7 +25,7 @@ Explanation: The longest valid parentheses substring is "()()"
 '''
 
 class Solution:
-    def longestValidParentheses(self, s: str) -> int:
+    def longestValidParentheses(self, s):
         if not s:
             return 0
         length = len(s)
