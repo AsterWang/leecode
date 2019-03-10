@@ -16,7 +16,7 @@ Given n = 3, there are a total of 5 unique BST's:
 
 '''
 class Solution:
-    def numTrees(self, n: int) -> int:
+    def numTrees(self, n):
         if n == 0:
             return 0
         if n == 1:

@@ -28,11 +28,11 @@ class Solution(object):
         return result
     
     def dfs(self, nums, path , result):
-        if not nums:
-            result.append(path)
-            return
-        for i in range(len(nums)):
-            self.dfs(nums[:i] + nums[i + 1:], path + [nums[i]], result)
+      if not nums:
+        result.append(path)
+        return
+      for i in range(len(nums)):
+        self.dfs(nums[:i] + nums[i+1:], path +  [nums[i]], result)
 
 s = Solution()
 result = s.permute(['c', 'a', 't', 'd', 'o', 'g'])

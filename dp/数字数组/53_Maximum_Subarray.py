@@ -11,7 +11,7 @@ Follow up:
 If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle.
 '''
 class Solution:
-    def maxSubArray(self, nums: List[int]) -> int:
+    def maxSubArray(self, nums):
         length = len(nums)
         for i in range(1, length):
             if nums[i - 1] > 0:

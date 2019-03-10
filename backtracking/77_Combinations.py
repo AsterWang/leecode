@@ -18,27 +18,27 @@ Output:
 
 
 #iterative solution
-class Solution(object):
-    def combine(self, n, k):
-        """
-        :type n: int
-        :type k: int
-        :rtype: List[List[int]]
-        """
-        result = []
-        stack = []
-        x = 1
-        while True:
-            length = len(stack)
-            if length == k:
-                result.append(stack[:])
-            if length == k or x > n:
-                if not stack:
-                    return result
-                x = stack.pop() + 1
-            else:
-                stack.append(x)
-                x += 1
+# class Solution(object):
+#     def combine(self, n, k):
+#         """
+#         :type n: int
+#         :type k: int
+#         :rtype: List[List[int]]
+#         """
+#         result = []
+#         stack = []
+#         x = 1
+#         while True:
+#             length = len(stack)
+#             if length == k:
+#                 result.append(stack[:])
+#             if length == k or x > n:
+#                 if not stack:
+#                     return result
+#                 x = stack.pop() + 1
+#             else:
+#                 stack.append(x)
+#                 x += 1
 
 
 
@@ -60,3 +60,6 @@ class Solution(object):
             return
         for i in range(index, len(nums)):
             self.dfs(nums, k - 1, i + 1, path + [nums[i]], result)
+
+s = Solution()
+print(s.combine(5, 3))

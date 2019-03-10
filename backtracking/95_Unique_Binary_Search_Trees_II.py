@@ -23,6 +23,14 @@ class Solution:
             left_tree = self.dfs(nums[:i])
             #generate right tree
             right_tree = self.dfs(nums[i+1:])
+
+            # Tree i  = combination(left_tree(i + 1), right_tree(i + 1))
+            # Left_tree(i + 1) = combination(left_tree(i + 2), right_tree(i + 2))
+            # Right_Tree(i + 1) = combination(left_tree(i + 2), right_Tree(i + 2))
+            # ....
+            # ....
+            # ....
+            # return [None] when there is no nums
             for left in left_tree:
                 for right in right_tree:
                     father = TreeNode(nums[i])
@@ -32,4 +40,5 @@ class Solution:
         return res
 
 s = Solution()
-s.generateTrees(3)
+re = s.generateTrees(3)
+print(re)

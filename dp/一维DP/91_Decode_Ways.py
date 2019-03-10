@@ -34,7 +34,7 @@ workbook:
     3.result 
 '''
 class Solution:
-    def numDecodings(self, s: str) -> int:
+    def numDecodings(self, s):
         if len(s) == 0 or s.startswith('0'):return 0
         pre = 1
         cur = 1
@@ -53,5 +53,4 @@ class Solution:
                     cur += pre
             pre = tmp
         return cur
-        
         
