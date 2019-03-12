@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91165228-6b40-4a46-819d-f598a7b92833" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/linkedlist/sorting/148_sort_list.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/207.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backtracking/46_Permutations.py" beforeDir="false" afterPath="$PROJECT_DIR$/backtracking/46_Permutations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backtracking/77_Combinations.py" beforeDir="false" afterPath="$PROJECT_DIR$/backtracking/77_Combinations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backtracking/90_Subset_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/backtracking/90_Subset_2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dp/一维DP/91_Decode_Ways.py" beforeDir="false" afterPath="$PROJECT_DIR$/dp/一维DP/91_Decode_Ways.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dp/数字数组/53_Maximum_Subarray.py" beforeDir="false" afterPath="$PROJECT_DIR$/dp/数字数组/53_Maximum_Subarray.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dp/数字数组/95_Unique_Binary_Search_Trees_II.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dp/数字数组/96_Unique_Binary_Search_Trees.py" beforeDir="false" afterPath="$PROJECT_DIR$/dp/数字数组/96_Unique_Binary_Search_Trees.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sorting_methods/heapsort.py" beforeDir="false" afterPath="$PROJECT_DIR$/sorting_methods/heapsort.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sorting_methods/quicksort.py" beforeDir="false" afterPath="$PROJECT_DIR$/sorting_methods/quicksort.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/topN/topN_numbers.py" beforeDir="false" afterPath="$PROJECT_DIR$/topN/topN_numbers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm.pages" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm.pages" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -105,9 +93,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="1721" />
-    <option name="y" value="15" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1440" />
+    <option name="y" value="106" />
     <option name="width" value="1440" />
     <option name="height" value="877" />
   </component>
@@ -260,8 +248,7 @@
     <configuration />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1721" y="15" width="1440" height="877" extended-state="1" />
-    <editor active="true" />
+    <frame x="1440" y="106" width="1440" height="877" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -271,7 +258,7 @@
       <window_info anchor="bottom" id="Python Console" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.35547355" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35547355" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.35670358" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
