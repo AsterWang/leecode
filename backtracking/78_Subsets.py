@@ -27,7 +27,6 @@ class Solution(object):
         :rtype: List[List[int]]
         """
         result = []
-        nums.sort()
         self.dfs(nums, 0, [], result)
         return result
     
@@ -37,4 +36,4 @@ class Solution(object):
             self.dfs(nums, i + 1, subset + [nums[i]], result)
 
 S = Solution()
-S.subsets([1,2,3])
+print(S.subsets([1,2,3]))

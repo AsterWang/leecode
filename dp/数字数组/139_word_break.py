@@ -35,14 +35,12 @@ class Solution(object):
         :rtype: bool
         """
         length = len(s)
-        if length == 0:
-            return 0
-        dp = [False for _ in range(length + 1)]
+        dp = [False] * (length + 1)
         dp[0] = True
         for i in range(1, length + 1):
             for word in wordDict:
-                if len(word) <= i:
-                    if s[i - len(word) : i] == word and dp[i - len(word)]:
+                if i >= len(word):
+                    if s[i-len(word):i] == word and dp[i -len(word)]:
                         dp[i] = True
                         break
         return dp[-1]
