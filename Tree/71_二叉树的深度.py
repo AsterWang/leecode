@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 '''
 输入一棵二叉树的根结点，求该树的深度。
 
@@ -13,7 +14,7 @@
 
 输出：3
 '''
-'# Definition for a binary tree node.
+# Definition for a binary tree node.
 class TreeNode:
     def __init__(self, x):
         self.val = x
