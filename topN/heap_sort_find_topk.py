@@ -40,7 +40,6 @@ def heap_find_topK(arr, k):
 			set_top(top, arr[i])
 	return top
 
-
 L = [50,16,30,10,60,90,2,80]
 #find top K smallest number in random order
 topK = heap_find_topK(L, 4)

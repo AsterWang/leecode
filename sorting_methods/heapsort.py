@@ -3,15 +3,16 @@ def adjust_heap(arr, i, length):
 	k = 2 * i + 1
 	while k < length:
 		#maximum heap
-		if k + 1 < length and arr[k + 1] < arr[k]:
+		if k + 1 < length and arr[k + 1] > arr[k]:
 			k += 1
-		if arr[k] < tmp:
+		if arr[k] > tmp:
 			arr[i] = arr[k]
 			i = k
 			k = 2 * i + 1
 		else:
 			break
 	arr[i] = tmp
+
 
 def swap(arr, i, j):
 	arr[i], arr[j] = arr[j], arr[i]

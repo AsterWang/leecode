@@ -41,6 +41,22 @@ def inOrder(root):
 			root = root.right
 	print(res)
 
+def inOrder(root):
+	if not root:
+		return None
+	stack = []
+	res = []
+	while stack or root:
+		if root:
+			stack.append(root)
+			root = root.left
+		else:
+			root = stack.pop()
+			res.append(root.val)
+			root = root.right
+
+
+
 t1 = TreeNode(1)
 t2 = TreeNode(2)
 t3 = TreeNode(3)
