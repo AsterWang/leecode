@@ -1,3 +1,4 @@
+#create a maximum heap
 def adjust_heap(arr, i, length):
 	tmp = arr[i]
 	k = 2 * i + 1
@@ -9,6 +10,21 @@ def adjust_heap(arr, i, length):
 			arr[i] = arr[k]
 			i = k
 			k = 2 * i + 1
+		else:
+			break
+	arr[i] = tmp
+
+#create a minimum heap
+def adjust_heap_to_minheap(arr, i, length):
+	tmp = arr[i]
+	k = i * 2 + 1
+	while k < length:
+		if k + 1 < length and arr[k + 1] < arr[k]:
+			k += 1
+		if arr[k] < tmp:
+			arr[i] = arr[k]
+			i = k
+			k = i * 2 +1
 		else:
 			break
 	arr[i] = tmp
@@ -42,6 +58,8 @@ def heap_find_topK(arr, k):
 	return top
 
 L = [50,16,30,10,60,90,2,80]
-# heap_sort(L)
+heap_sort(L)
 topK = heap_find_topK(L, 4)
 print(topK)
+
+

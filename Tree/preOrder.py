@@ -25,7 +25,6 @@ def preOrder_recursive(root):
 		preOrder_recursive(root.left)
 		preOrder_recursive(root.right)
 
-
 def preOrder(root):
 	stack = []
 	while root or stack:
@@ -47,38 +46,6 @@ def inOrder(root):
 			root = stack.pop()
 			print(root.val, end = ' ')
 			root = root.right
-
-def postOrder(root):
-	stack = []
-	pre = None
-	if root:
-		stack.append(root)
-		while stack:
-			curr = stack[-1]
-			if (not curr.left and not curr.right) or (pre and pre == curr.left or pre == curr.right):
-				print(curr.val, end = ' ')
-				stack.pop()
-				pre = curr
-			else:
-				if curr.right: stack.append(curr.right)
-				if curr.left:  stack.append(curr.left)
-
-def postOrder(root):
-	stack = []
-	pre = None
-	if root:
-		stack.append(root)
-		while stack:
-			curr = stack[-1]
-			if (not curr.left and not curr.right) or (pre and pre == curr.left or pre == curr.right):
-				stack.append(curr.val)
-				stack.pop()
-				pre = curr
-			else:
-				if curr.right: stack.append(curr.right)
-				if curr.left : stack.append(curr.left)
-	print(stack)
-
 
 t1 = TreeNode(1)
 t2 = TreeNode(2)
