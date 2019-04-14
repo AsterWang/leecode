@@ -16,13 +16,13 @@ class Solution(object):
         self.dfs(root, [], sum)
         return self.res
     def dfs(self, root, path, sum):
-        if not root or sum < 0:
-            return
         if not root.left and not root.right and sum == root.val:
             self.res.append(path + [root.val])
             return
-        self.dfs(root.left, path + [root.val], sum - root.val)
-        self.dfs(root.right, path + [root.val], sum - root.val)
+        if root.left:
+            self.dfs(root.left, path + [root.val], sum - root.val)
+        if root.right:
+            self.dfs(root.right, path + [root.val], sum - root.val)
 
 n1 = TreeNode(5)
 n2 = TreeNode(4)

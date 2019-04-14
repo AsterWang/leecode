@@ -44,7 +44,6 @@ public class DCL {
 	}
 }
 
-
 public class HolderSingleton {
 	private HolderSingleton(){}
 	//内部类会被延迟加载
@@ -55,6 +54,7 @@ public class HolderSingleton {
 		return Holder.instance;
 	}
 }
+
 
 public class EnumSingleton {
 	private EnumSingleton() {}
@@ -91,7 +91,24 @@ public class EnumSingleton {
 	public static EnumSingleton getInstance(){
 		return EnumHolder.INSTANCE.getInstance();
 	}
+}
 
+public class EnumSingleton {
+	private EnumSingleton(){}
+
+	private enum EnumHolder {
+		INSTANCE;
+		private EnumSingleton instance;
+		EnumHolder() {
+			instance = new EnumSingleton();
+		}
+		public EnumSingleton getInstance(){
+			return instance;
+		}
+	}
+	public static EnumSingleton getInstance() {
+		return EnumHolder.INSTANCE.getInstance();
+	}
 }
 
 
