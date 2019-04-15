@@ -23,7 +23,7 @@ class TreeNode(object):
 class Solution(object):
     def __init__(self):
         self.res = None
-        self. k = 0
+        self.k = 0
     def preOrder(self, root):
         if not root:
             return

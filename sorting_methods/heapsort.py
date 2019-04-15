@@ -29,7 +29,6 @@ def adjust_heap_to_minheap(arr, i, length):
 			break
 	arr[i] = tmp
 
-
 def swap(arr, i, j):
 	arr[i], arr[j] = arr[j], arr[i]
 
