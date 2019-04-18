@@ -40,9 +40,12 @@ class Solution(object):
                 while cur and cur.val == pre.val:
                     pre = cur
                     cur = cur.next
+                
+                #case like 1->1->1
                 if ppre.val == pre.val:         #reset head position
                     tmp_head = cur
                     ppre = cur
+                #case like 1->2->2->2
                 else:
                     ppre.next = cur
                 pre = cur
@@ -53,3 +56,4 @@ class Solution(object):
                 pre = cur
                 cur = cur.next
         return tmp_head
+    

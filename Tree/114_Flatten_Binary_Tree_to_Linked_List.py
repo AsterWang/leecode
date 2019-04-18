@@ -23,11 +23,11 @@ The flattened tree should look like:
           6
 '''
 # Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
+class TreeNode(object):
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
 
 class Solution(object):
     def flatten(self, root):
@@ -46,3 +46,18 @@ class Solution(object):
         root.left = None
         root.right = self.prev
         self.prev = root
+
+n1 = TreeNode(1)
+n2 = TreeNode(2)
+n5 = TreeNode(5)
+n3 = TreeNode(3)
+n4 = TreeNode(4)
+n6 = TreeNode(6)
+
+n1.left = n2
+n1.right = n5
+n5.left = n3
+n5.right = n6
+n2.right = n4
+s = Solution()
+s.flatten(n1)

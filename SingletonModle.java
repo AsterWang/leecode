@@ -34,12 +34,13 @@ public class DCL {
 	private static volatile instance = null;
 	private DCL(){}
 	public static DCL getInstance(){
-		if(instance == null)
+		if (instance == null) {
 			synchronized(DCL.class) {
 				// double check
 				if (instance == null)
 					instance = new DCL();
 			}
+		}
 		return instance;
 	}
 }
@@ -74,48 +75,3 @@ public class EnumSingleton {
 		return EnumSingletonHolder.INSTANCE.getInstance();
 	}
 }
-
-public class EnumSingleton {
-	private EnumSingleton() {}
-	//lazy
-	private enum EnumHolder {
-		INSTANCE;
-		private EnumSingleton instance;
-		EnumHolder() {
-			instance = new EnumSingleton();
-		}
-		public EnumSingleton getInstance(){
-			return instance;
-		}
-	}
-	public static EnumSingleton getInstance(){
-		return EnumHolder.INSTANCE.getInstance();
-	}
-}
-
-public class EnumSingleton {
-	private EnumSingleton(){}
-
-	private enum EnumHolder {
-		INSTANCE;
-		private EnumSingleton instance;
-		EnumHolder() {
-			instance = new EnumSingleton();
-		}
-		public EnumSingleton getInstance(){
-			return instance;
-		}
-	}
-	public static EnumSingleton getInstance() {
-		return EnumHolder.INSTANCE.getInstance();
-	}
-}
-
-
-
-
-
-
-
-
-

@@ -12,15 +12,15 @@ class Solution(object):
         :rtype: None Do not return anything, modify root in-place instead.
         """
         self.prev = None
-        def dfs(root):
-            if not root:
-                return None
-            dfs(root.right)
-            dfs(root.left)
-            root.right = self.prev
-            root.left = None
-            self.prev = root
-        dfs(root)
+        self.dfs(root)
+    def dfs(self, root):
+        if not root:
+            return
+        self.dfs(root.right)
+        self.dfs(root.left)
+        root.left = None
+        root.right = self.prev
+        self.prev = root
 
 node_1 = TreeNode(1)
 node_2 = TreeNode(2)

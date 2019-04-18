@@ -10,8 +10,18 @@
     2
    / \
   1   3
-
 输出：3
+
+Input: root = [5,3,6,2,4,null,null,1], k = 3
+       5
+      / \
+     3   6
+    / \
+   2   4
+  /
+ 1
+Output: 3
+
 '''
 class TreeNode(object):
     def __init__(self, x):
@@ -24,6 +34,7 @@ class Solution(object):
     def __init__(self):
         self.res = None
         self.k = 0
+
     def preOrder(self, root):
         if not root:
             return
@@ -33,7 +44,6 @@ class Solution(object):
             self.res = root
             return
         self.preOrder(root.right)
-
 
     def kthNode(self, root, k):
         """

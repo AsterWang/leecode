@@ -21,7 +21,9 @@ observation:
 Buy:    prices[i]: min{prices[k], k <= i}
 Sell:   prices[j]: max{prices[k], k >= j}
 
-1）我们可以选择到目前为止价格最低的股价进行买入，在未来某一天卖出，这样就符合到未来某一天的时候，那天的收益是最高的这么一个DP思想，就是当前最优
+1） 我们可以选择到目前为止价格最低的股价进行买入，在未来某一天卖出，这样就符合到未来某一天的时候，
+    那天的收益是最高的这么一个DP思想，就是当前最优
+
 2）然后我们可以根据到目前为止收益的最高，到当天时的收益进行对比，也就是max(max_profit, prices[i] - min_price)
 '''
 class Solution(object):

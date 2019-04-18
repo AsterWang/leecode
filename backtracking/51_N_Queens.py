@@ -1,9 +1,11 @@
 class Solution:
+
     def solveNQueens(self, n):
         result = []
         nums = [-1] * n
         self.dfs(nums, [], 0, result)
-        print(result[0])
+        for x in result:
+            print(x)
         return result
 
     def is_valid(self,nums,  queen_no):
@@ -19,7 +21,7 @@ class Solution:
         for i in range(len(nums)):
             nums[queen_no] = i
             if self.is_valid(nums, queen_no):
-                tmp = '.' * len(nums)
+                tmp = '#' * len(nums)
                 self.dfs(nums, path + [tmp[:i] + 'Q' + tmp[i+1:]], queen_no + 1, result)
 
 S = Solution()

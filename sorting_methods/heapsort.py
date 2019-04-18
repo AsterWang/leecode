@@ -36,6 +36,8 @@ def heap_sort(arr):
 	#creating maximum headp
 	mid = len(arr) // 2 - 1
 	length = len(arr)
+	for i in range(mid, -1, -1):
+		adjust_heap(arr, i, length)
 	for i in range(mid, -1 , -1):
 		adjust_heap(arr, i, length)
 	#sorting

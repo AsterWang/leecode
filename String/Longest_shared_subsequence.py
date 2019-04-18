@@ -22,8 +22,7 @@ class Solution(object):
     				dp[i][j] = dp[i - 1][j - 1] + 1
     				mx_len = max(mx_len, dp[i][j])
     	print(mx_len)
-
-
+	
 
 s = Solution()
 s.lengthOfSharedLongestSuseq('ABCBDAB', 'BDCABA')
